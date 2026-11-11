@@ -1,0 +1,22 @@
+LISTA DE PRECIOS ON SERVICE - APP INSTALABLE (PWA)
+
+1) SUBIR A GITHUB PAGES
+   - En github.com: New repository -> nombre "lista-precios" -> Public -> Create.
+   - "uploading an existing file": arrastrá TODO el contenido de esta carpeta (index.html, manifest.webmanifest, sw.js y la carpeta icons). Commit.
+   - Settings -> Pages -> Branch: main / (root) -> Save.
+   - En 1-2 minutos queda en: https://TU-USUARIO.github.io/lista-precios/
+
+2) INSTALAR EN EL CELULAR
+   - Android (Chrome): abrí el link -> botón "Instalar app" (o menú ⋮ -> Instalar aplicación).
+   - iPhone (Safari): abrí el link -> Compartir -> "Agregar a pantalla de inicio".
+   Queda con ícono propio, abre a pantalla completa y funciona sin internet.
+
+3) SI QUERÉS UN APK (Android) O SUBIRLA A PLAY STORE
+   - Entrá a https://www.pwabuilder.com , pegá el link de GitHub Pages y tocá "Package for stores" -> Android.
+   - Descargás un .zip con el APK firmado (para instalar directo) y el AAB (para Google Play).
+   - Guardá el archivo de firma (signing key) que te da: lo necesitás para futuras actualizaciones.
+
+4) ACTUALIZAR PRECIOS
+   - Reemplazá index.html por el nuevo y cambiá la línea VERSION en sw.js (ej. 'precios-2026-12-01').
+   - Los celulares toman la lista nueva solos la próxima vez que abran la app con internet.
+     (Con el APK de PWABuilder no hace falta reinstalar: muestra lo que esté publicado en el link.)
